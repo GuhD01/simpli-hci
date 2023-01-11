@@ -1,0 +1,351 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+body{
+  background-color: #FFFFF6;
+  background-image: url(images/bg2.png);
+  background-repeat: no repeat;
+  background-size: 1450px 700px;
+}
+h1 {
+  margin-top: 0;
+}
+
+.commonProperty {
+  font-family: 'Muli', sans-serif;
+  color: rgb(51, 51, 51);
+  width: 70vw;
+  font-size: 1.2vw;
+  margin: 0;
+  padding: 5vh;
+}
+
+
+
+
+.logo {
+  color: black;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  padding: 6vh 0;
+  padding-left: 2vw;
+  border-bottom: 0.5px solid rgb(128, 128, 128);
+  background-color: rgb(241, 237, 237);
+}
+
+nav{
+  background: #F0F1F1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%; 
+}
+.bigger {
+  font-size: 4em;
+}
+.bx-arrow-back {
+  color: black;
+}
+.bx-arrow-back:hover {
+  color: white;
+  cursor: pointer
+}
+.logo .menu-icon{
+  color: #263A47;
+  font-size: 60px;
+  margin-left: 20px;
+}
+.sidebar {
+  z-index: 10;
+}
+
+nav .sidebar{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 255px; 
+  padding: 20px 0;
+  background-color: #F0F1F1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+
+nav.open .sidebar{
+  left: 0;
+}
+
+nav .sidebar .logo .logo-name1{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #263A47;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+nav .sidebar .logo .menu-icon{
+  color: #263A47;
+  font-size: 40px;
+}
+
+.sidebar .sidebar-content{
+  display: flex;
+  height: 100%; 
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+
+.sidebar-content .list{
+  list-style: none;
+}
+
+.list .nav-link{
+  display: flex;
+  align-items: center;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  background-color: #8AC4E4;
+  width: 230px;
+}
+
+.nav-link .icon{
+  margin-right: 14px;
+  font-size: 20px;
+  color: #263A47;
+}
+
+.nav-link .link{
+  font-size: 16px;
+  color: #263A47;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav.open ~ .overlay{
+  opacity: 1;
+  left: 255px;
+  pointer-events: auto;
+}
+.section h1 {
+  margin: 0;
+  background-color: rgb(51, 51, 51);
+  padding: 1vw;
+  font-size: 2vw;
+  color: white;
+  letter-spacing: 0.2vw;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+
+
+.parallaxContainer {
+  position: relative;
+  /* opacity: 0.70; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* fixed = parallax
+    scroll = normal */
+  background-attachment: fixed;
+}
+
+.Finance h2,
+.Finance p {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.Finance h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3.5vw;
+  padding-top: 38vh;
+  line-height: 6vw;
+}
+
+
+.aboutSection {
+  margin: auto;
+  
+}
+
+.aboutSection p {
+  margin: 0;
+  line-height: 2.5vw;
+}
+
+.aboutSection #hello::first-letter {
+  font-size: 3vw;
+}
+
+#hello a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  text-decoration: underline;
+}
+
+
+
+#contactMe {
+  padding: 0.5vw;
+  background-color: rgb(193, 216, 240);
+  text-decoration: none !important;
+  transition: all 0.5s;
+}
+
+#contactMe:hover {
+  color: white !important;
+  background-color: lightslategray;
+}
+
+.currentFocus {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 2vw 0 0 0;
+}
+
+.currentFocus h4 {
+  margin-right: 1vw;
+}
+
+/* EXPERIENCE SECTION CSS============== */
+/* ========================================== */
+/* ============================================================ */
+
+.experienceSectoin {
+  margin: auto;
+}
+
+.experienceSectoin .box {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 5vh 0;
+}
+.experienceSectoin .box > div {
+  padding: 0.5vw;
+}
+
+.experienceSectoin .boxhead {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  align-items: center;
+}
+
+.experienceSectoin .boxhead h3 {
+  font-size: 1.8vw;
+  
+}
+
+.experienceSectoin .boxLogo img {
+  padding-left: 3vw;
+}
+
+.experienceSectoin .boxBody {
+  line-height: 2.5vw;
+}
+
+.experienceSectoin .boxBody ul {
+  padding: 0 4vw;
+}
+
+.experienceSectoin .boxFoot {
+  background-color: rgb(241, 237, 237);
+}
+
+.boxBody p,
+.boxFoot p {
+  padding: 0 2.5vw;
+}
+
+hr {
+  width: 90%;
+  border: 0.05vw solid lightslategray;
+}
+
+.experienceSectoin .box1 img {
+  width: 40%;
+}
+
+.experienceSectoin .box2 img {
+  width: 50%;
+}
+
+.experienceSectoin .box3 img {
+  width: 66%;
+}
+
+.experienceSectoin .box4 img {
+  width: 30%;
+}
+
+.projectsSection {
+  margin: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+}
+.projectsSection .box {
+  width: 31%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  /* padding: 0.1vw; */
+  margin: 1vw;
+  display: inline-block;
+  background-color: rgb(241, 237, 237);
+}
+
+.projectsSection .box img {
+  width: 100%;
+}
+
+.projectsSection .box h4 {
+  font-size: 1.5vw;
+}
+
+.projectsSection .box h4,
+.projectsSection .box p {
+  padding: 0 2vw 2vw 2vw;
+  margin: 0;
+}
+
+.projectsSection .box a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+.projectsSection .box a:hover {
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+

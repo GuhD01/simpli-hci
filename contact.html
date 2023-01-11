@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="dashboard1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+    </div>
+    <div class="logo-name">
+        <span class="logo-name">
+            <img src="images/logo.png" height=100px width=260px alt="">
+        </span>
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name1">Simpli.</span>
+        </div>
+
+        <div class="sidebar-content">
+            <ul class="lists">
+                <li class="list">
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="bx bxs-home-circle icon"></i>
+                        <span class="link">Dashboard</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="expenses.html" class="nav-link">
+                        <i class='bx bx-money-withdraw icon'></i>
+                        <span class="link">Expenses Tracker</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="currency.html" class="nav-link">
+                        <i class='bx bx-money icon' ></i>
+                        <span class="link">Currency Exchanger</span>
+                    </a>
+                </li>
+                <li class="list">
+                  <a href="information.html" class="nav-link">
+                      <i class='bx bx-book-alt icon' ></i>
+                      <span class="link">Finance Info</span>
+                  </a>
+              </li>
+            </ul>
+
+            <div class="bottom-content">
+                <li class="list">
+                    <a href="contact.html" class="nav-link">
+                        <i class='bx bxs-phone icon' ></i>
+                        <span class="link">Contact us</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="index.html" class="nav-link">
+                        <i class='bx bxs-log-out icon' ></i>
+                        <span class="link">Log out</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="overlay"></section>
+
+<script>
+    const navBar = document.querySelector("nav"),
+            menuBtns = document.querySelectorAll(".menu-icon")
+            overlay = document.querySelector(".overlay")
+
+            menuBtns.forEach(menuBtn => {
+                menuBtn.addEventListener("click", () => {
+                    navBar.classList.toggle("open");
+                });
+            });
+
+            overlay.addEventListener("click", () => {
+                navBar.classList.remove("open");
+            })
+</script>
+  <div class="logo-container">
+    <img src="images/logo3.png" alt="Logo">
+  </div>
+  <div class="container">
+    <form id="contact-form" onsubmit="submitForm(); return false">
+      <h1>Contact Us Form</h1>
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="mobile" placeholder="Mobile" required>
+      <h4>Message</h4>
+      <textarea required></textarea>
+      <input type="submit" value="Send" id="button"> 
+      <script>
+        function submitForm() {
+          document.getElementById("contact-form").reset();
+          setTimeout(function() {alert("Your message has been successfully sent!");}, 2);
+          
+        }
+      </script>     
+    </form>
+
+        
+
+      </script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="expenses.css" class="css">  
+    <title>Expenses Tracker</title>
+</head>  
+<body>
+
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+        </div>
+        <div class="logo-name">
+            <span class="logo-name">
+                <img src="images/logo.png" height=100px width=260px alt="">
+            </span>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name1">Simpli.</span>
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="dashboard.html" class="nav-link">
+                            <i class="bx bxs-home-circle icon"></i>
+                            <span class="link">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="expenses.html" class="nav-link">
+                            <i class='bx bx-money-withdraw icon'></i>
+                            <span class="link">Expenses Tracker</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="currency.html" class="nav-link">
+                            <i class='bx bx-money icon' ></i>
+                            <span class="link">Currency Exchanger</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="information.html" class="nav-link">
+                            <i class='bx bx-book-alt icon' ></i>
+                            <span class="link">Finance Info</span>
+                        </a>
+                    </li>
+                </ul>
+                </ul>
+
+                <div class="bottom-content">
+                    <li class="list">
+                        <a href="contact.html" class="nav-link">
+                            <i class='bx bxs-phone icon' ></i>
+                            <span class="link">Contact us</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="index.html" class="nav-link">
+                            <i class='bx bxs-log-out icon' ></i>
+                            <span class="link">Log out</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="overlay"></section>
+
+    <script>
+        const navBar = document.querySelector("nav"),
+                menuBtns = document.querySelectorAll(".menu-icon")
+                overlay = document.querySelector(".overlay")
+
+                menuBtns.forEach(menuBtn => {
+                    menuBtn.addEventListener("click", () => {
+                        navBar.classList.toggle("open");
+                    });
+                });
+
+                overlay.addEventListener("click", () => {
+                    navBar.classList.remove("open");
+                })
+    </script>
+
+    <div class="main">
+        <div class="container">
+            <div class="top_card">
+                <p>Your Current Balance</p>
+                <h3><span id="symbol">Rp. </span><span id="balance">10500</span></h3>
+            </div>
+
+
+            <div class="form">
+                <h3>Add new transaction:</h3>
+
+                <div class="form-group">
+                    <label for="transaction_name">Name</label>
+                    <input type="text" name="transaction_name" placeholder="e.g. Starbucks" id="transaction_name">
+                </div>
+
+                <div class="form-group radio">
+                    <label for="transaction_type">Type</label>
+                    <div class="radio_group">
+                        <input type="radio" value="income" name="transaction_type" id="income" checked>
+                        <label for="transaction_type">Income</label>
+                    </div>
+                    <div class="radio_group">
+                        <input type="radio" value="expense" name="transaction_type" id="expense" placeholder="Expense">
+                        <label for="transaction_type">Expense</label>          
+                    </div>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="transaction_amount">Amount</label>
+                    <input type="number" placeholder="300" name="transaction_amount" id="transaction_amount">
+                </div>
+
+                <button class="btn btn-block" id="add_transaction">Add Transaction</button>
+              
+
+
+                <button class="btn btn-block" id="cancel_edit" onclick="cancelEdit()">Cancel Edit</button>
+
+            </div>
+
+            <p class="second_heading">Your Transactions:</p>   
+
+            <div class="conatiner_of_list_of_transactions">
+                
+                <ul id="list_of_transactions">
+                    <li class="transaction income">
+                        <p>Earned this month</p>
+                        <div class="right">
+                            <p>+$100</p>
+                            <button class="link">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="link">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

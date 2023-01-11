@@ -1,0 +1,583 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    background-image: url('images/BGS.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+nav img{
+    margin-top: 0px;
+    margin-left: 20px;
+    width: 230px;
+  }
+  nav{
+    background: #afd2e2;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 90px;
+    width: 100%; 
+  }
+.signin_right{
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    bottom: 2%;
+    left: 73%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.sim_signin{
+	width: 80%;
+    padding: 99px 0;
+    scale:140%;
+    
+}
+.signin_container{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+.signin_left, .signin_right{
+	
+	width: 50%;
+}
+.signin_right .signin_heading{
+    text-align:center;
+}
+.logo_and_login {
+    margin: 48px auto;
+    width: 60%;
+}
+.simpli_logo{
+	width: 100%;
+    margin-bottom: -90px;
+}
+.signup_container {
+    margin: 15px auto;
+    width: 38%;
+}
+.signup_link{
+	font-family: arial;
+    font-size: 14px;
+    color: black;
+}
+.right_container{
+	width: 75%;
+	margin: 36px 0;
+}
+.s-log {
+	float: right;
+    color: black;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}  
+.order {
+    background: #fffff6;
+    border: none;
+    padding: 12px;
+    color: #6a6a6a;
+    height: 15px;
+    font-size: 14px;
+}
+.grid-8{
+    width: 87%;          
+}
+.grid-8:focus{
+    outline: none;
+}
+.line{
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+.si-button{
+  	background: #86bbd8;
+    border: none;
+    color: white;
+    padding: 12px 13px;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.si-b-con{
+    margin: 20px auto;
+    width: 50%;
+    font-size: 14px;
+}   
+.remAndForgot{
+   	margin-top: 14px;
+}
+.rem_me{
+	font-size: 14px;
+	color: #6a6a6a;
+}
+.rem_check{
+	margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 13px;
+    cursor: pointer;
+}
+.siForm_end {
+    display: inline-block;
+    width: 46.9999999%;
+    vertical-align: middle;
+}
+.or{
+	font-size: 12px;
+	color: #6a6a6a;
+}
+.google, .facebook {
+    margin: 12px auto;
+    cursor: pointer;
+}
+.g_con{
+	width: 38%;
+}
+.fb_con{
+	width: 43%;
+}
+.g_img, .f_img{
+	width: 18px;
+    vertical-align: middle;
+}
+.g_link, .f_link{
+	font-size: 14px;
+    color: #6a6a6a;
+}
+
+
+
+/* Media Query */
+@media all and (max-width: 480px) {
+
+
+.sim_signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin_container {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.signin_left, .signin_right {
+    width: 100%;
+}
+.logo_and_login {
+    margin: 48px auto;
+    width: 100%;
+}
+.signup_container {
+    margin: 15px auto;
+    width: 115px;
+}
+.right_container{
+    width: 100%;
+    margin: 36px 0;
+}
+.grid-8 {
+    width: 91%;
+}
+.order {
+    background: #fffff6;
+    border: none;
+    padding: 12px 0;
+    color: #6a6a6a;
+    height: 15px;
+    font-size: 14px;
+}
+.rem_check {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+.rem_me {
+    font-size: 12px;
+    color: #6a6a6a;
+}
+.s-log {
+    float: right;
+    color: black;
+    font-size: 11px;
+    margin: 5px 0 0 0;
+}
+.si-button {
+    background: #86bbd8;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.or {
+    font-size: 12px;
+    text-align: center;
+    color: #6a6a6a;
+}
+.siForm_end {
+    display: inline-block;
+    width: 44%;
+    vertical-align: middle;
+}
+.li_with_con{
+    text-align: center;
+}
+.g_con, .fb_con{
+    width: 100%;
+}
+
+
+}
+
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+
+
+.sim_signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin_container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+.logo_and_login {
+    margin: 48px 0;
+    text-align: center;
+    width: 100%;
+}
+.simpli_logo {
+    width: 230px;
+}
+.signup_container {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+.right_container {
+    width: 100%;
+    margin: 36px 0;
+}
+.grid-8 {
+    width: 92%;
+}
+.order {
+    background: #fffff6;
+    border: none;
+    padding: 10px 0px;
+    color: #6a6a6a;
+    height: 15px;
+    font-size: 14px;
+}
+.rem_check {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+.si-b-con {
+    margin: 15px auto;
+    width: 50%;
+    font-size: 14px;
+}
+.si-button {
+    background: #86bbd8;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.or {
+    font-size: 12px;
+    color: #6a6a6a;
+    text-align: center;
+}
+.siForm_end {
+    display: inline-block;
+    width: 45.5%;
+    vertical-align: middle;
+}
+.g_con, .fb_con {
+    width: 100%;
+}
+.google, .facebook {
+    margin: 12px auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+}
+
+
+
+@media all and (min-width: 769px) and (max-width: 1239px) {
+
+
+
+.sim_signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin_container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+.logo_and_login {
+    margin: 48px 0;
+    text-align: center;
+    width: 100%;
+}
+.simpli_logo {
+    width: 230px;
+}
+.signup_container {
+    margin: 25px 0;
+    width: 100%;
+    text-align: center;
+}
+.right_container{
+    width: 75%;
+    margin: 36px 0;
+}
+.grid-8 {
+    width: 92%;
+}
+.order {
+    background: #fffff6;
+    border: none;
+    padding: 10px 0px;
+    color: #6a6a6a;
+    height: 15px;
+    font-size: 14px;
+}
+.rem_check {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+.si-b-con {
+    margin: 15px auto;
+    width: 50%;
+    font-size: 14px;
+}
+.si-button {
+    background: #86bbd8;
+    border: none;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+.or {
+    font-size: 12px;
+    color: #6a6a6a;
+    text-align: center;
+}
+.siForm_end {
+    display: inline-block;
+    width: 45.5%;
+    vertical-align: middle;
+}
+.g_con, .fb_con {
+    width: 100%;
+}
+.google, .facebook {
+    margin: 12px auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+}
+
+@media all and (min-width: 1240px) and (max-width: 1920px) {
+    .sim_signin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signin_container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+    }
+    .logo_and_login {
+        margin: 48px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .simpli_logo {
+        width: 230px;
+    }
+    .signup_container {
+        margin: 30px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .right_container{
+        width: 50%;
+        margin: 36px 0;
+    }
+    .grid-8 {
+        width: 92%;
+    }
+    .order {
+        background: #fffff6;
+        border: none;
+        padding: 10px 0px;
+        color: #6a6a6a;
+        height: 15px;
+        font-size: 14px;
+    }
+    .rem_check {
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+    .si-b-con {
+        margin: 15px auto;
+        width: 50%;
+        font-size: 14px;
+    }
+    .si-button {
+        background: #86bbd8;
+        border: none;
+        color: white;
+        padding: 7px 14px;
+        border-radius: 20px;
+        width: 100%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .or {
+        font-size: 12px;
+        color: #6a6a6a;
+        text-align: center;
+    }
+    .siForm_end {
+        display: inline-block;
+        width: 45.5%;
+        vertical-align: middle;
+    }
+    .g_con, .fb_con {
+        width: 100%;
+    }
+    .google, .facebook {
+        margin: 12px auto;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 1921px) and (max-width: 3840px){
+    .sim_signin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signin_container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+    }
+    .logo_and_login {
+        margin: 48px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .simpli_logo {
+        width: 230px;
+    }
+    .signup_container {
+        margin: 30px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .right_container{
+        width: 50%;
+        margin: 36px 0;
+    }
+    .grid-8 {
+        width: 92%;
+    }
+    .order {
+        background: #fffff6;
+        border: none;
+        padding: 10px 0px;
+        color: #6a6a6a;
+        height: 15px;
+        font-size: 14px;
+    }
+    .rem_check {
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+    .si-b-con {
+        margin: 15px auto;
+        width: 50%;
+        font-size: 14px;
+    }
+    .si-button {
+        background: #86bbd8;
+        border: none;
+        color: white;
+        padding: 7px 14px;
+        border-radius: 20px;
+        width: 100%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .or {
+        font-size: 12px;
+        color: #6a6a6a;
+        text-align: center;
+    }
+    .siForm_end {
+        display: inline-block;
+        width: 45.5%;
+        vertical-align: middle;
+    }
+    .g_con, .fb_con {
+        width: 100%;
+    }
+    .google, .facebook {
+        margin: 12px auto;
+        cursor: pointer;
+        text-align: center;
+    } 
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+    width: 100%;
+    }
+    }
+
+

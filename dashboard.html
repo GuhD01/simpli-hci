@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+    <link rel="stylesheet" href="dashboard.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dycalendar.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+	<title>Simpli</title>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<i class="bx bx-menu menu-icon"></i>
+		
+		</div>
+		<div class="logo-name">
+			<span class="logo-name">
+				<img src="images/logo.png" height=100px width=260px alt="">
+		
+			</span>
+			
+		</div>
+		
+	
+		<div class="sidebar">
+			<div class="logo">
+				<i class="bx bx-menu menu-icon"></i>
+				<span class="logo-name1">Simpli.</span>
+			</div>
+
+			<div class="sidebar-content">
+				<ul class="lists">
+					<li class="list">
+						<a href="dashboard.html" class="nav-link">
+							<i class="bx bxs-home-circle icon"></i>
+							<span class="link">Dashboard</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="expenses.html" class="nav-link">
+							<i class='bx bx-money-withdraw icon'></i>
+							<span class="link">Expense Tracker</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="currency.html" class="nav-link">
+							<i class='bx bx-money icon' ></i>
+							<span class="link">Currency Exchanger</span>
+						</a>
+					</li>
+					<li class="list">
+					  <a href="information.html" class="nav-link">
+						  <i class='bx bx-book-alt icon' ></i>
+						  <span class="link">Finance Info</span>
+					  </a>
+				  </li>
+				</ul>
+			</div>
+			<div class="bottom-content">
+				<li class="list">
+					<a href="contact.html" class="bottom-nav-link">
+						<i class='bx bxs-phone icon' ></i>
+						<span class="link">Contact us</span>
+					</a>
+				</li>
+				<li class="list">
+					<a href="index.html" class="bottom-nav-link">
+						<i class='bx bxs-log-out icon' ></i>
+						<span class="link">Log out</span>
+					</a>
+				</li>
+			</div>
+
+		</div>
+	</nav>
+	
+	<section class="overlay"></section>
+	
+	<script>
+		const navBar = document.querySelector("nav"),
+				menuBtns = document.querySelectorAll(".menu-icon")
+				overlay = document.querySelector(".overlay")
+	
+				menuBtns.forEach(menuBtn => {
+					menuBtn.addEventListener("click", () => {
+						navBar.classList.toggle("open");
+					});
+				});
+	
+				overlay.addEventListener("click", () => {
+					navBar.classList.remove("open");
+				})
+	</script>
+    	<div class="sDashboard_container">
+    		<h1 class="D_head">Dashboard</h1>
+    		<div class="top_dashborad">
+    			<div class="top_lHalf">
+    				<div class="TB_container">
+                        <div class="sec_cov">
+    					<h3 class="mini_sec_head">Total Balance</h3>
+    					<div class="TB_rp">Rp 1.448.000,00</div>
+                        </div>
+    				</div>
+    				<div class="SG_container">
+                        <div class="sec_cov">
+    					<h3 class="mini_sec_head">Savings' Goal</h3>
+    					<div class="extra_grid">Rp 320.000,00 / Rp 720.000,00</div>
+							<div class="progress_bar">
+								<div class="progress"></div>
+							</div>
+                        </div>
+    				</div>
+    			</div>
+    			<div class="top_rHalf">
+                    <div class="TH_container">
+                    <div class="sec_cov">
+    				<h3 class="mini_sec_head">Transaction History</h3>
+    				
+    					<table class="TH_table">
+    						<thead class="TH_thead">
+    							<tr>
+    								<th>Category</th>
+    							    <th>Name</th>
+    							    <th>Date</th>
+    							    <th>Amount</th>
+    							</tr>
+    						</thead>
+    						<tbody class="TH_tbody">
+    							<tr>
+    								<td>
+    									<span><img src="assets/images/burger.png"></span>
+    								    Food and Beverage
+    							    </td>
+    								<td>Shopee Food</td>
+    								<td>29/10/2022</td>
+    								<td>Rp 45.000,00</td>
+    							</tr>
+    							<tr>
+    								<td>
+    									<span><img src="assets/images/entertainment.png"></span>
+    								    Entertainment
+    								</td>
+    								<td>Gundam RX178</td>
+    								<td>28/10/2022</td>
+    								<td>Rp 232.000,00</td>
+    							</tr>
+    						</tbody>
+    					</table>
+    				</div>
+                    </div>
+    			</div>
+    		</div>
+    		<div class="bottom_dashboard">
+    			<div class="bottom_lHalf">
+    				<div class="ES_container">
+                        <div class="sec_cov">
+    					<h3 class="mini_sec_head">Expenses Summary</h3>
+							<div class="table">
+								<canvas id="myChart" width="544.31px" height="290px"></canvas>
+							</div>
+                        </div>
+    				</div>
+    			</div>
+    			<div class="bottom_rHalf">
+    				<div class="WB_container">
+                        <div class="sec_cov">
+							<div class="circular_progress_bar">
+								<div class="circular-progress">
+									<span class="progress-value"></span>
+								</div>
+							</div>
+    					<div class="extra_grid">Weekly Balance</div>
+    					<div class="WB">Rp 133.000,00</div>
+                        </div>
+    				</div>
+    				<div class="DCI_container">
+                        <div class="sec_cov">
+    						<h3 class="mini_sec_head">Calendar</h3>
+							<div id="dycalendar"></div>
+                        </div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<script src="dashboard.js"></script>
+	<script src="dycalendar.js"></script>
+	<script>
+		dycalendar.draw({
+			target: '#dycalendar',
+			type: 'month',
+			dayformat: 'full',
+			monthformat: 'full',
+			highlighttargetdate: true,
+			prevnextbutton: 'show'
+		})
+	</script>
+	
+</body>
+</html>

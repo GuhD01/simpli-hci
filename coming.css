@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif; 
+  }
+  body {
+      overflow: hidden;
+      background: #2f4858;
+
+  }
+  img{ 
+    align-items: center;
+
+   
+  }
+  .coming-soon {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transform: translateY(-50%);
+  }
+  .coming-soon-inner {
+      position: relative;
+  }
+  .heading {
+      font-size: 100px;
+      text-transform: uppercase;
+      padding: 20px;
+      background: #fece00;
+      color: #2f4858;
+      transform: skewY(-10deg);
+      font-weight: 500;
+      line-height: 100px;
+  }
+  .small-heading {
+      font-size: 30px;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 20px;
+      background: #86BBD8;
+      color: #000;
+      transform: skewY(-10deg);
+      font-weight: 500;
+      line-height: 30px;
+      box-shadow: 10px 10px 20px rgb(0 0 0 / .3);
+      position: absolute;
+      right: 0;
+      bottom: -44px;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  .back {
+      transform: skewY(-10deg);
+      position: absolute;
+      left: 0;
+      bottom: -75px;
+  }
+  .back z {
+      padding-right: 5px;
+  }
+  
+  .coming-soon-inner:before {
+      content: "";
+      height: 2px;
+      width: 60%;
+      background: #fece00;
+      position: absolute;
+      top: -50px;
+      right: 0;
+      transform: skewY(-10deg);
+  }
+  
+  .coming-soon-inner:after {
+      content: "";
+      height: 2px;
+      width: 60%;
+      background: #86BBD8;
+      position: absolute;
+      bottom: -80px;
+      right: 0;
+      transform: skewY(-10deg);
+  }
+  
+  .heading:before {
+      content: "";
+      height: 2px;
+      width: 60%;
+      background: #fece00;
+      position: absolute;
+      top: -50px;
+      left: 0;
+  }
+  
+  .heading:after {
+      content: "";
+      height: 2px;
+      width: 60%;
+      background: #86BBD8;
+      position: absolute;
+      bottom: -120px;
+      left: 0;
+  }
+  
+  .back li {
+    padding-left: 20px;
+    font-size:18px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+
+  }
+  .back li a:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+
+  
