@@ -11,6 +11,7 @@
 - Gde Ngurah Randy Agastya | L1AC | NIM: 2602119165
 - Lenno Aubert Hartono | L1AC | NIM: 2602116983
 
+###If you encounter any issues, please don't hesitate to [Contact Us](mailto:cs@simpli.host)
 
 
 
